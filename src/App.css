@@ -4,24 +4,36 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   background-color: lightcyan;
 }
 
-/* Optionally, you can apply these styles to center text within elements */
+
 * {
   text-align: center;
 }
 
 .board-row {
-  padding: -5px;
-  height: 20px;
+ display: flex;
+ column-gap: 1%;
 }
 
 .square {
   color: black;
-  background-color: transparent;
+  background-color: white;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  outline: none;
 }
 
+.square:active{
+  transform: translateY(0) translateX(0) scale(1);
+  box-shadow: none;
+}
+
+
+
 .board {
-  transform: scale(3.0);
+  transform: scale(5.0);
 }
